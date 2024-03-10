@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\BeverageController;
+use App\Http\Controllers\PurchaseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/about', function () {
 
 Route::resource('/beverage', BeverageController::class);
 
+Route::post('/beverage/buy', [PurchaseController::class, 'buy']);
