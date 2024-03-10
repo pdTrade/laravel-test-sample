@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\BeverageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return 'About';
 });
+
+Route::resource('/beverage', BeverageController::class);
+
