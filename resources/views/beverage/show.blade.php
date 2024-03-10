@@ -1,0 +1,2 @@
+
+<div>{{ $beverage->name }}</div>

@@ -15,4 +15,9 @@ class BeverageController extends Controller
 
         return view('beverage.index', compact('beverages'));
     }
+
+    public function show(Beverage $beverage)
+    {
+        return view('beverage.show', compact('beverage'));
+    }
 }
